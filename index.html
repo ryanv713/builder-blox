@@ -1,11 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Test Page</title>
+  <title>Builder Blox Market</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7ff;
+      color: #222;
+    }
+
+    .top-bar {
+      background: #222;
+      color: #f1f1f1;
+      padding: 8px 20px;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .top-bar span {
+      margin-right: 10px;
+    }
+
+    header {
+      text-align: center;
+      padding: 25px 10px 15px;
+      background: #ffcc33;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      font-size: 14px;
+    }
+
+    nav {
+      background: #ffe57f;
+      text-align: center;
+      padding: 8px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 20px auto 40px;
+      padding: 0 10px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .category-card {
+      background: white;
+      border-radius: 10px;
+      padding: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .category-name {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .color-block {
+      width: 100%;
+      height: 80px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+      background: #ccc;
+    }
+
+    /* Different colors for each block */
+    .c1 { background: #ff7675; }
+    .c2 { background: #74b9ff; }
+    .c3 { background: #55efc4; }
+    .c4 { background: #fdcb6e; }
+    .c5 { background: #a29bfe; }
+    .c6 { background: #fab1a0; }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #777;
+      padding: 10px 0 15px;
+    }
+  </style>
 </head>
-<body style="background:#ffcccb; font-family: Arial, sans-serif;">
-  <h1>Hello from Builder Blox</h1>
-  <p>If you can see this, GitHub Pages is working.</p>
+<body>
+
+  <div class="top-bar">
+    <span>Builder Blox Market</span>
+    <span>1-800-222-2025 &nbsp; | &nbsp; Open 10:00am - 5:00pm</span>
+  </div>
+
+  <header>
+    <h1>Builder Blox Market</h1>
+    <p>Colorful building sets for kids, collectors, and anyone who likes to build.</p>
+  </header>
+
+  <nav>
+    <a href="#">About</a>
+    <a href="#">Sets</a>
+    <a href="#">Contact</a>
+    <a href="#">Cart</a>
+  </nav>
+
+  <main>
+    <h2 class="section-title">Browse Builder Blox Categories</h2>
+
+    <div class="category-grid">
+      <div class="category-card">
+        <div class="color-block c1"></div>
+        <div class="category-name">Starter Sets</div>
+        <div>Small boxes with basic pieces for simple builds.</div>
+      </div>
+
+      <div class="category-card">
+        <div class="color-block c2"></div>
+        <div class="category-name">City Sets</div>
+        <div>Streets, houses, shops, and small vehicles.</div>
+      </div>
+
+      <div class="category-card">
+        <div class="color-block c3"></div>
+        <div class="category-name">Space & Sci-Fi</div>
+        <div>Rockets, space stations, and alien worlds.</div>
+      </div>
+
+      <div class="category-card">
+        <div class="color-block c4"></div>
+        <div class="category-name">Mega Tubs</div>
+        <div>Large buckets packed with mixed pieces.</div>
+      </div>
+
+      <div class="category-card">
+        <div class="color-block c5"></div>
+        <div class="category-name">Theme Packs</div>
+        <div>Special sets based on castles, pirates, and more.</div>
+      </div>
+
+      <div class="category-card">
+        <div class="color-block c6"></div>
+        <div class="category-name">Replacement Parts</div>
+        <div>Extra pieces to replace lost or broken blocks.</div>
+      </div>
+    </div>
+  </main>
+
+  <div class="footer">
+    Demo Builder Blox marketplace layout for project use.
+  </div>
+
 </body>
 </html>
