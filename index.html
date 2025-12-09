@@ -100,13 +100,66 @@
       background: #ccc;
     }
 
-    /* Different colors for each block */
     .c1 { background: #ff7675; }
     .c2 { background: #74b9ff; }
     .c3 { background: #55efc4; }
     .c4 { background: #fdcb6e; }
     .c5 { background: #a29bfe; }
     .c6 { background: #fab1a0; }
+
+    .login-box {
+      margin-top: 40px;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      background: white;
+      border-radius: 10px;
+      padding: 16px 18px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      font-size: 14px;
+    }
+
+    .login-box h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .login-field {
+      margin-bottom: 10px;
+    }
+
+    .login-field label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 3px;
+    }
+
+    .login-field input {
+      width: 100%;
+      padding: 6px 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 13px;
+      box-sizing: border-box;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 8px 0;
+      border-radius: 4px;
+      border: none;
+      background: #5a5efc;
+      color: white;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 5px;
+    }
+
+    .login-button:hover {
+      background: #4044d8;
+    }
 
     .footer {
       text-align: center;
@@ -133,6 +186,7 @@
     <a href="#">Sets</a>
     <a href="#">Contact</a>
     <a href="#">Cart</a>
+    <a href="#login">Customer Login</a>
   </nav>
 
   <main>
@@ -153,7 +207,7 @@
 
       <div class="category-card">
         <div class="color-block c3"></div>
-        <div class="category-name">Space & Sci-Fi</div>
+        <div class="category-name">Space &amp; Sci-Fi</div>
         <div>Rockets, space stations, and alien worlds.</div>
       </div>
 
@@ -175,11 +229,10 @@
         <div>Extra pieces to replace lost or broken blocks.</div>
       </div>
     </div>
-  </main>
 
-  <div class="footer">
-    Demo Builder Blox marketplace layout for project use.
-  </div>
-
-</body>
-</html>
+    <!-- Customer Login Section -->
+    <div id="login" class="login-box">
+      <h3>Customer Login</h3>
+      <div class="login-field">
+        <label for="email">Email</label>
+        <input id="email" type="email" placehol
